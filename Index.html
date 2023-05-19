@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Scratch 3</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="tab.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="shortcut icon" type="image" href="scratch html logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script>
+    // function showNotification() {
+    //   const notification = new Notification("Scratch 3", {
+    //     body: "hi"
+    //   });
+    // }
+
+    // console.log(Notification.permission);
+
+    // if (Notification.permission === "granted") {
+    //   showNotification();
+    // } else if (Notification.permission === "denied") {
+    //   Notification.requestPermission().then(permission => {
+    //     showNotification();
+    //   });
+    // }
+  </script>
+  <!-- <script src="tooltip.js"></script> -->
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- <form action="?" method="POST">
+    <div class="g-recaptcha" data-sitekey="123"></div>
+  
+    <input type="submit" value="Submit">
+  </form> -->
+  <div class="pb">
+    <div class="filled"></div>
+  </div>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="scratch html logo.png" alt="" width="40px">
+        </span>
+
+        <div class="text logo-text">
+          <span class="name">Scratch</span>
+          <span class="profession">Learning Page</span>
+        </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+
+        <li class="search-box">
+          <i class='bx bx-search icon'></i>
+          <input type="text" placeholder="Search...">
+        </li>
+
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="https://softwaretester27.github.io/Scratch3LearningPage/">
+              <i class='bx bx-home-alt icon'></i>
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="Links.html">
+              <i class='bx bx-link-alt icon'></i>
+              <span class="text nav-text">Links</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="Learn.html" target="_top">
+              <i class='bx bx-book icon'></i>
+              <span class="text nav-text">Learn</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="About.html">
+              <i class='bx bx-info-circle icon'></i>
+              <span class="text nav-text">About</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="Admin/index.html">
+              <i class="material-icons icon">person_outline</i>
+              <span class="text nav-text">Admin</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom-content">
+        <li class="">
+          <a href="Scratch 3 form.html" target="_top">
+            <span class="material-symbols-outlined icon">description</span>
+            <span class="text nav-text">Reach us</span>
+          </a>
+        </li>
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="mode-text text">Dark mode</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <script>
+    const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    })
+
+    searchBtn.addEventListener("click", () => {
+      sidebar.classList.remove("close");
+    })
+
+    modeSwitch.addEventListener("click", () => {
+      body.classList.toggle("dark");
+
+      if (body.classList.contains("dark")) {
+        modeText.innerText = "Dark mode";
+      } else {
+        modeText.innerText = "Light mode";
+
+      }
+    });
+  </script>
+  <!-- <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href='Scratch 3.html' class="nav-link">
+          &nbsp;&nbsp;&nbsp;<img src="F:\Data\Kalpesh\Desktop\Kartik\VS Code Projects\home2.png" width="50px">
+          <span class="link-text">Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href='Links.html' class="nav-link">
+          &nbsp;&nbsp;&nbsp;<img src="F:\Data\Kalpesh\Desktop\Kartik\VS Code Projects\external-link2.png" width="50px">
+          <span class="link-text">Links</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href='About.html' class="nav-link">
+          &nbsp;&nbsp;&nbsp;<img src="F:\Data\Kalpesh\Desktop\Kartik\VS Code Projects\about2.png" width="50px">
+          <span class="link-text">About</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href='Learn.html' class="nav-link">
+          &nbsp;&nbsp;&nbsp;<img src="F:\Data\Kalpesh\Desktop\Kartik\VS Code Projects\learn.png" width="50px">
+          <span class="link-text">Learn</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href='F:\Data\Kalpesh\Desktop\Kartik\VS Code Projects\Admin Dashboard Panel\index.html' class="nav-link">
+          &nbsp;&nbsp;&nbsp;<img src="admin.png" width="50px">
+          <span class="link-text">Admin</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href='Scratch 3 form.HTML' class="nav-link" target="_blank">
+          &nbsp;&nbsp;&nbsp;<img src="F:\Data\Kalpesh\Desktop\Kartik\VS Code Projects\google-forms.png" width="50px">
+          <span class="link-text">Reach Us</span>
+        </a>
+      </li>
+    </ul>
+  </nav> -->
+
+  <!-- <div class="sidebar">
+    <h2>
+      <a class="list" href="Scratch 3.HTML"><span class="material-icons">
+          home
+        </span>Home
+      </a><br>
+      <br>
+      <a class="list" href="Links.html"><span class="material-icons">
+          link&nbsp;
+        </span>Links</a>
+    </h2>
+    <a class="list" href="Scratch 3 form.HTML" target="_blank">Website Form</a>
+
+  </div> -->
+  <!-- <div class="wrapper">
+    <h2>Browser:</h2>
+    <div class="logos">
+      <img class="chrome" src="chrome.png" alt="chrome" title="Google Chrome">
+      <img class="firefox" src="firefox.png" alt="firefox" title="Mozilla Firefox">
+      <img class="edge" src="edge.png" alt="edge" title="Microsoft Edge">
+      <img class="opera" src="opera.png" alt="opera" title="Opera">
+      <img class="safari" src="safari.png" alt="safari" title="Apple Safari">
+    </div>
+  </div> -->
+  <script>
+    let userAgent = navigator.userAgent;
+    let browser;
+    if(userAgent.match(/edg/i)){
+      browser = "edge";
+      // alert("Please Set Zoom Level To 80%")
+    }else if(userAgent.match(/firefox|fxios/i)){
+      browser = "firefox";
+      alert("Note Before You Continue: You will not able to access the beta program thru firefox");
+    }else if(userAgent.match(/opr/i)){
+      browser = "opera";
+      alert("You are running Opera which is an unsupported browser. Make sure you open it on, Edge, Chrome or Firefox");
+    }else if(userAgent.match(/chrome|chromium|crios/i)){
+      browser = "chrome";
+    }else if(userAgent.match(/safari/i)){
+      browser = "safari";
+      alert("You are running Safari which is an unsupported browser. Make sure you open it on, Edge, Chrome or Firefox");
+    }else{
+      alert("Other browser");
+      alert("You are running on an unsupported browser. Make sure You open this website on, Edge, Chrome or Firefox");
+      window.close();
+    }
+    const logo = document.querySelector(`.logos .${browser}`);
+    if(logo != ""){
+      logo.style.opacity = "1";
+    }
+  </script>
+  <div class="tobbar">
+    <div class="logo">
+      <ul>
+        <li class="logo">
+          <a href='https://scratch.mit.edu/' target="_blank">
+            <span class="scratch"></span>
+          </a>
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <li class="link">
+            <a class="create" href="https://scratch.mit.edu/projects/editor/" target="_blank">Create</a><br>
+          </li> -->
+        <li class="fs">
+          <button class="sfs" style="border: none; background-color: #fff; width: 20px;"
+            onclick="document.documentElement.requestFullscreen(); sfs()">
+            <i class="fa-solid fa-expand"></i>
+          </button>
+          <button class="efs" style="border: none; background-color: #fff; width: 20px;"
+            onclick="document.exitFullscreen(); efs()">
+            <i class="fa-solid fa-compress"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <center>
+    <div class="main">
+      <script>
+
+        let sfs = document.querySelector("button.sfs")
+        let efs = document.querySelector("button.efs")
+        efs.style = "visibility: hidden"
+        sfs.style = "visibility: visible"
+        function sfs() {
+          sfs.style = "visibility: hidden"
+          efs.style = "visibility: visible"
+        }
+        function efs() {
+          efs.style = "visibility: hidden"
+          sfs.style = "visibility: visible"
+        }
+
+        window.addEventListener('keydown', (event) => {
+          if (event.key === 's' && event.ctrlKey) {
+            event.preventDefault();
+          }
+        })
+      </script><br><br>
+      <div class="title">
+        Scratch 3 Learning Page
+        <a class="list" onclick="window.location='Learn.html'"><button class="btn1 sl">
+            &nbsp;&nbsp;Start Learning &raquo;&nbsp;&nbsp;
+          </button></a>
+      </div><br><br>
+      <div class="custom-shape-divider-bottom-1674573699">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25" class="shape-fill"></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5" class="shape-fill"></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="orange"><br>
+        <style>
+          .custom-shape-divider-bottom-1674556206 {
+            position: static;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+          }
+
+          .custom-shape-divider-bottom-1674556206 svg {
+            position: relative;
+            display: block;
+            width: calc(133% + 1.3px);
+            height: 148px;
+          }
+
+          .custom-shape-divider-bottom-1674556206 .shape-fill {
+            fill: #ff8400;
+          }
+
+          .red {
+            background-color: none;
+          }
+
+          .custom-shape-divider-top-1674572035 {
+            position: absolute;
+            /* top: 0; */
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            z-index: 0;
+          }
+
+          .custom-shape-divider-top-1674572035 svg {
+            position: relative;
+            display: block;
+            width: calc(100%);
+            height: 60px;
+          }
+
+          .custom-shape-divider-top-1674572035 .shape-fill {
+            fill: #24262b;
+          }
+        </style>
+        <script src="./javascripts/tooltips.js"></script><br>
+        <div class="inner">
+          <section class="flex-row tips-info-section cards-info ideas-all-cards">
+            <div class="tips-info-body">
+                <h2 style="font-size: 3rem;"><span>Get the Entire Collection of Coding Cards</span></h2>
+                <p><span>
+                    <div class="Text2">With the Scratch Coding Cards, you can learn to create interactive games,
+                      stories, music,
+                      animations, and more!</div>
+                  </span></p><a href="https://resources.scratch.mit.edu/www/cards/en/scratch-cards-all.pdf"
+                  rel="noopener noreferrer" target="_blank" download><button class="button ideas-button"><img
+                      src="https://scratch.mit.edu/images/ideas/download-icon.svg" width="30">&nbsp;&nbsp;&nbsp;<span>Get
+                      PDF</span></button></a>
+              </div>
+            <div class="tips-info-body tips-illustration"><img
+                src="https://scratch.mit.edu/images/ideas/cards-illustration.svg"></div>
+          </section>
+        </div><br>
+      </div>
+      <div class="custom-shape-divider-top-1674572035">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25" class="shape-fill"></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5" class="shape-fill"></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"></path>
+        </svg>
+      </div><br><br><br>
+      <div class="red"><br><br><br><br>
+        <div class="Image">
+          <p>&nbsp;Here is a preview of the editor you will be working on to make Projects:</p>
+          <a href="https://scratch.mit.edu/projects/editor" target="_blank">
+            <img width=95% src="scratch_test.png.png" class="vid"></a>
+        </div>
+        <div class="Video">
+          <iframe width="700" height="415" src="https://www.youtube.com/embed/Ge1DbXkyMKo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="vid"></iframe>&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>
+              <-- Here Is A Video On Scratch 3
+          </p>
+        </div>
+      </div>
+      <!-- <a href="https://apps.microsoft.com/store/detail/files-app/9NGHP3DX8HDX?hl=en-in&gl=in" target="_blank">Files app</a> -->
+      <br>
+      <!-- <iframe width="600" height="315" src="https://www.youtube.com/embed/ytB0oaJcjYU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="vid"></iframe><br> -->
+      <!-- <iframe width="600" height="315" src="https://www.youtube.com/embed/eJf42cpqY-w" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="vid"></iframe><br> -->
+      <a class="list" href='Learn.html'><button class="btn1 sl" style="width:22%">
+          Start Learning
+        </button></a><br>
+      <div class="Text2">Or</div>
+    </div>
+    <div class="Text2">
+        <div class="Beta">
+          <a onclick="betaCheck()" class="JB" oncontextmenu="document.querySelector('a.JB').addEventListener('contextmenu', (e) => {
+            e.preventDefault(e)
+          })" href="Premium/index.html">&nbsp;<img src="https://scratch.mit.edu/svgs/intro/join.svg"> Join Premium &nbsp;</a>
+          <img src="https://scratch.mit.edu/images/ideas/masthead-illustration.svg" class="ill">
+        </div>
+    </div>
+    <script>
+      // function betaCheck() {
+      //   let bc = prompt("Enter Code:")
+      //   if (bc == "sc3bejn") {
+      //     window.location = "Premium/index.html";
+      //   }
+      //   else {
+      //     alert("Wrong Code")
+      //   }
+      // }
+
+    </script>
+    <!-- <div class="mytabs">
+      <input type="radio" name="mytabs" id="tabtrial" checked>
+      <label for="tabtrial">Trial</label>
+      <div class="tab">
+        <h2>Trial</h2><br>
+        <p>Get Scratch Free For 30 Days</p><br>
+        <button class="get"><a href='' class="get">Get Scratch Trial</a></button>
+      </div>
+      <input type="radio" name="mytabs" id="tabstart">
+      <label for="tabstart">Starter</label>
+      <div class="tab">
+        <h2>Starter</h2><br>
+        <button class="get"><a href='' class="get">Get Starter</a></button>
+      </div>
+      <input type="radio" name="mytabs" id="tabmaster">
+      <label for="tabmaster">Master</label>
+      <div class="tab">
+        <h2>Master</h2><br>
+        <p>Unlock All Beta Features And Projects</p><br>
+        <a href="C:\Users\Kartik\Desktop\Kartik\HTML\Form Code    Open Me!!!\index.html" target="_blank"><button
+            class="DF">Edit As A Developer</button></a>
+        <div class="Text2"><b>Or</b></div>
+        <button class="get"><a href="C:\Users\Kartik\Desktop\Kartik\HTML\Scratch 3\GetMaster.html" target="_blank"
+            class="get">Get Master</a></button>
+      </div>
+    </div> -->
+    <button id="scroll">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+    <script>
+      const scroll = document.querySelector("#scroll");
+
+      scroll.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+    <div class="custom-shape-divider-bottom-1674573699">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+    <style>
+      .custom-shape-divider-bottom-1674573699 {
+        position: static;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+      }
+
+      .custom-shape-divider-bottom-1674573699 svg {
+        position: relative;
+        display: block;
+        width: calc(110% + 1.3px);
+        height: 60px;
+      }
+
+      .custom-shape-divider-bottom-1674573699 .shape-fill {
+        fill: #24262B;
+      }
+    </style>
+    <!-- <div class="footer">
+      <a class="footer" href="https://scratch.mit.edu/projects/703234595/fullscreen/" target="_blank">Windows 12
+        Beta</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="footer" href="https://scratch.mit.edu/projects/702199302/fullscreen/" target="_blank">Platformer 2d game
+        v1.13</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="footer" href="https://scratch.mit.edu/projects/662702901/fullscreen/" target="_blank">Ray casting 3d
+        Movie Maker</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="footer" href="https://scratch.mit.edu/projects/662388947/fullscreen/"
+        target="_blank">Keyboard</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="Scratch 3.html">Home</a></li>
+              <li><a href="Links.html">Links</a></li>
+              <li><a href="Scratch 3 form.html">Reach Us</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Learn.html">Learn</a></li>
+              <li><a href="F:\Data\Kalpesh\Desktop\Kartik\VS Code Projects\Admin Dashboard Panel\index.html">Admin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Projects</h4>
+            <ul>
+              <li><a href="https://scratch.mit.edu/projects/703234595/fullscreen/" target="_blank">Windows 12 beta
+                </a>
+              </li>
+              <li><a href="https://scratch.mit.edu/projects/702199302/fullscreen/" target="_blank">Platformer 2d game
+                  v1.13</a></li>
+              <li><a href="https://scratch.mit.edu/projects/662702901/fullscreen/" target="_blank">Ray casting 3d
+                  Movie Maker</a></li>
+              <li><a href="https://scratch.mit.edu/projects/662388947/fullscreen/" target="_blank">Keyboard</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </center>
+  </div>
+  </h3>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <script>
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+</body>
+
+</html>
