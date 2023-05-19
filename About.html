@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="shortcut icon" type="image" href="scratch html logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <font face="Nunito">
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="scratch html logo.png" alt="" width="40px">
+                  </span>
+
+                  <div class="text logo-text">
+                      <span class="name">Scratch</span>
+                      <span class="profession">Learning Page</span>
+                  </div>
+              </div>
+  
+              <i class='bx bx-chevron-right toggle'></i>
+          </header>
+  
+          <div class="menu-bar">
+              <div class="menu">
+  
+                  <li class="search-box">
+                      <i class='bx bx-search icon'></i>
+                      <input type="text" placeholder="Search...">
+                  </li>
+  
+                  <ul class="menu-links">
+                      <li class="nav-link">
+                          <a href="Scratch 3.html">
+                              <i class='bx bx-home-alt icon' ></i>
+                              <span class="text nav-text">Home</span>
+                          </a>
+                      </li>
+  
+                      <li class="nav-link">
+                          <a href="Links.html">
+                            <i class='bx bx-link-alt icon'></i>
+                              <span class="text nav-text">Links</span>
+                          </a>
+                      </li>
+  
+                      <li class="nav-link">
+                          <a href="Learn.html">
+                              <i class='bx bx-book icon'></i>
+                              <span class="text nav-text">Learn</span>
+                          </a>
+                      </li>
+  
+                      <li class="nav-link">
+                          <a href="About.html">
+                              <i class='bx bx-info-circle icon'></i>
+                              <span class="text nav-text">About</span>
+                          </a>
+                      </li>
+  
+                      <li class="nav-link">
+                          <a href="Admin/index.html">
+                            <i class="material-icons icon">person_outline</i>
+                              <span class="text nav-text">Admin</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="bottom-content">
+                  <li class="">
+                      <a href="Scratch 3 form.html" target="_top">
+                        <span class="material-symbols-outlined icon">description</span>
+                          <span class="text nav-text">Reach us</span>
+                      </a>
+                  </li>
+                  <li class="mode">
+                      <div class="sun-moon">
+                          <i class='bx bx-moon icon moon'></i>
+                          <i class='bx bx-sun icon sun'></i>
+                      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <span class="mode-text text">Dark mode</span>
+  
+                      <div class="toggle-switch">
+                          <span class="switch"></span>
+                      </div>
+                  </li>
+                  
+              </div>
+          </div>
+  
+      </nav>
+  
+      <script>
+          const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+  
+  
+  toggle.addEventListener("click" , () =>{
+      sidebar.classList.toggle("close");
+  })
+  
+  searchBtn.addEventListener("click" , () =>{
+      sidebar.classList.remove("close");
+  })
+  
+  modeSwitch.addEventListener("click" , () =>{
+      body.classList.toggle("dark");
+      
+      if(body.classList.contains("dark")){
+          modeText.innerText = "Dark mode";
+      }else{
+          modeText.innerText = "Light mode";
+          
+      }
+  });
+      </script>
+    <div class="tobbar">
+      <div class="logo">
+        <ul>
+          <li class="logo">
+            <a href='https://scratch.mit.edu/' target="_blank">
+              <span class="scratch"></span>
+            </a>
+          </li>
+          <!-- <li class="link">
+              <a class="create" href="https://scratch.mit.edu/projects/editor/" target="_blank">Create</a><br>
+            </li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="Text2">
+      <b>
+        Hello, This Is The Scratch Website.<br>
+        Here, You Will Learn About The Scratch Online Editor.
+      </b>
+    </div><br>
+    <a class="list" href='Learn.html'><button class="btn1 sl">
+        &nbsp;&nbsp;Start Learning >&nbsp;&nbsp;
+      </button></a><br><br>
+      <div class="custom-shape-divider-bottom-1674573699">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25" class="shape-fill"></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5" class="shape-fill"></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <style>
+        .custom-shape-divider-bottom-1674573699 {
+          position: static;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          overflow: hidden;
+          line-height: 0;
+          transform: rotate(180deg);
+        }
+  
+        .custom-shape-divider-bottom-1674573699 svg {
+          position: relative;
+          display: block;
+          width: calc(110% + 1.3px);
+          height: 60px;
+        }
+  
+        .custom-shape-divider-bottom-1674573699 .shape-fill {
+          fill: #24262B;
+        }
+      </style>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>General</h4>
+            <ul>
+              <li><a href="Scratch 3.html">Home</a></li>
+              <li><a href="Links.html">Links</a></li>
+              <li><a href="Scratch 3 form.html">Reach Us</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Learn.html">Learn</a></li>
+              <li><a href="F:\Data\Kalpesh\Desktop\Kartik\VS Code Projects\Admin Dashboard Panel\index.html">Admin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Projects</h4>
+            <ul>
+              <li><a href="https://scratch.mit.edu/projects/703234595/fullscreen/" target="_blank">Windows 12 Beta</a>
+              </li>
+              <li><a href="https://scratch.mit.edu/projects/702199302/fullscreen/" target="_blank">Platformer 2d game
+                  v1.13</a></li>
+              <li><a href="https://scratch.mit.edu/projects/662702901/fullscreen/" target="_blank">Ray casting 3d
+                  Movie Maker</a></li>
+              <li><a href="https://scratch.mit.edu/projects/662388947/fullscreen/" target="_blank">Keyboard</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </font>
+</body>
+
+</html>

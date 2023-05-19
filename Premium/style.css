@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sniglet;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ef00ff, #0077ff);
+
+}
+.container h1{
+    color: #fff;
+    font-size: 40px;
+    padding: 50px 0;
+    text-align: center;
+}
+.Price-row{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 25px;
+}
+.price-col{
+    background: none;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Comic Sans MS;
+    backdrop-filter: blur(500px);
+}
+/* .price-col h4{
+    font-size: 52px;
+
+} */
+.price-col h3{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+
+}
+.price-col h3 span{
+    font-size: 20px;
+    color: aqua;
+}
+.price-col ul{
+    text-align: left;
+    cursor: pointer;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+
+}
+.price-col ul li{
+    margin: 15px 0;
+}
+.price-col ul li::before{
+    content: '\2020';
+    color: #fff;
+    font-weight: bold;
+    margin-right: 8px;
+
+}
+.price-col button{
+    width: 100%;
+    padding: 14px 0;
+    background: #ff8800;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    transition: background 600ms ;
+}
+.price-col button:hover{
+    background: #11ca00;
+    transition: background 600ms ;
+}

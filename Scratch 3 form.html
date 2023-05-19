@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reach Us - Scratch 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" type="image" href="F:\Data\Kalpesh\Desktop\Kartik\VS Code Projects\google-forms.png">
+  <style>
+    body {
+      background-color: #525252;
+      font-family: Comic Sans MS;
+      font-size: larger;
+      align-items: center;
+      justify-content: center;
+      width: 75%;
+      padding: 0 5% 0 11.5%;
+    }
+
+    body::-webkit-scrollbar {
+      width: 0.90rem;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: #525252;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background: #434343;
+      border-radius: 100px;
+    }
+
+    .submitbtn {
+      border-radius: 6px;
+      border: 0;
+      background-color: rgb(0 68 255);
+      display: inline-block;
+      font-family: Comic Sans MS;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      color: #fff;
+      cursor: pointer;
+      line-height: 36px;
+      text-transform: none;
+      width: 100px;
+      outline: none;
+      overflow: hidden;
+      position: relative;
+      z-index: 0;
+    }
+
+    .resetbtn {
+      border-radius: 6px;
+      border: none;
+      color: rgb(0, 68, 255);
+      cursor: pointer;
+      display: inline-block;
+      font-family: Comic Sans MS;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 36px;
+      text-decoration: none;
+      text-transform: none;
+      width: 130px;
+      outline: none;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      z-index: 0;
+      /* margin-right: 14px; */
+      background: rgb(160, 160, 160);
+    }
+
+    .text {
+      border-radius: 5px;
+      border: none;
+      background-color: #b3b3b3;
+    }
+
+    .text-area {
+      border-radius: 5px;
+      border: none;
+      background-color: gray;
+    }
+
+    textarea:focus {
+      border: none;
+    }
+
+    fieldset {
+      color: aqua;
+      border-color: #ffa500;
+      border-radius: 5px;
+      padding-left:  38px;
+    }
+
+    .container {
+      background-color: #ffffff;
+      margin-top: 400px;
+      margin-left: 500px;
+      width: 90vmin;
+      padding: 50px 30px;
+      bottom: 0px;
+      /* position: absolute; */
+      transform: translate(-50%, -50%);
+      /* left: 100px;
+      top: 100px; */
+      right: none;
+      border-radius: 10px;
+      box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+      position: static;
+    }
+
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+    }
+
+    button.form {
+      height: 28px;
+      width: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 3px;
+      border: none;
+      background-color: #ffffff;
+      outline: none;
+      color: #020929;
+    }
+
+    select {
+      padding: 7px;
+      border: 1px solid #020929;
+      border-radius: 3px;
+    }
+
+    .options label,
+    .options select {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    input[type="color"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: transparent;
+      width: 40px;
+      height: 28px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+      border-radius: 15px;
+      box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+    }
+
+    input[type="color"]::-moz-color-swatch {
+      border-radius: 15px;
+      box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+    }
+
+    #text-input {
+      margin-top: 10px;
+      border: 1px solid #dddddd;
+      padding: 20px;
+      height: 50vh;
+    }
+
+    .active {
+      background-color: #e0e9ff;
+    }
+
+    .msg {
+      border-radius: 150px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: none;
+      transition: 100ms ease;
+      margin-top: 8px;
+      margin-left: 8px;
+      width: 100%;
+      background: #ffa500;
+    }
+
+    .msg:focus {
+      /* border: 3px solid #ffa500; */
+      outline: none;
+      /* margin-bottom: 8px; */
+    }
+
+    .msgsend {
+      display: flex;
+      background: linear-gradient(90deg, #ef00ff 0.00%, #0077ff 100.00%);
+      width: 33.9%;
+      border-radius: 40px;
+    }
+
+    :root {
+      --uc: #ed9a00;
+    }
+
+    #Text {
+      width: 400px;
+      height: 40px;
+      border-radius: 6px;
+      background: #161616c6;
+      border-bottom: 2.1px solid #9d9d9dc6;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      font-size: 1rem;
+      padding-left: 10px;
+      color: white;
+      font-family: Comic Sans MS;
+    }
+
+    #Text:focus {
+      border: none;
+      border-bottom: 2.3px solid var(--uc);
+      outline: none;
+    }
+    input[type=radio]{
+      border-radius: 40px;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      background-color: #2d2d2d;
+      border:none;
+      transition: 100ms ease;
+      transition: border .13s
+       ease-in-out,box-shadow .13s 
+       ease-in-out;
+    }
+
+    input[type=radio]:checked{
+      background-color: #2d2d2d;
+      transition: 100ms ease;
+      border: 6.1px solid #ff6262;
+    }
+    
+    input[type=radio]:hover + input[type=checkbox]:checked{
+      border: 2.2px solid #ff6262;
+    }
+
+    .checkboxContainer input {
+      display: none;
+    }
+
+    .checkboxContainer {
+      display: inline-block;
+      padding-left: 45px;
+      position: relative;
+      cursor: pointer;
+      font-family: Sniglet;
+    }
+
+    span.checkbox{
+      margin-left: 20px;
+    }
+
+    .checkboxContainer .checkbox{
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: #000;
+      border-radius: 3.5px;
+    }
+  </style>
+</head>
+<body>
+  <article id="contact">
+    <form>
+      <fieldset>
+        <legend>Form</legend>
+        <fieldset>
+          <legend>Details</legend>
+          <p>
+            <label for="firstName">Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name" autocomplete="on"
+              class="text" required />
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Ex: 1234567890" autocomplete="on"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="text" required />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Ex: 1@1.com" class="text" required>
+          </p>
+          <!-- <p>
+            <label for="decade">Decade:</label>
+            <input type="number" name="decade" id="decade" min="1000" max="10000" step="10" value="2020" class="text" />
+          </p> -->
+        </fieldset>
+        <br>
+        <!-- <fieldset>
+            <legend>What is your favorite food?</legend>
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza" />
+              <label for="pizza">Pizza</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="tacos">Tacos</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="burger" value="burger" />
+              <label for="burger">Burger</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="other">Other</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset> -->
+        <legend>Device(s) To Send Messages/Replies</legend>
+        <!-- css checkbox -->
+        <p>
+          <input type="checkbox" id="Mobile" class="input" checked />Mobile<br />
+        </p>
+        <p>
+          <legend>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="checkboxContainer">Computer 
+              <input type="checkbox" id="Computer" class="input" checked onclick="isCheckedComp()" />
+              <span class="checkbox"></span>
+          </label>
+            <summary>
+              <input type="radio" id="Mobile" class="input" checked />This Pc (C:)
+            </summary>
+          </legend>
+        </p>
+        <p>
+          <input type="checkbox" id="SmartWatch" class="input" />Smart Watch<br />
+        </p>
+        <p><input type="checkbox" id="Ipad" class="input" column="0" />Ipad<br /></p>
+        <legend>Send Message</legend>
+        <input type="search" id="Text" placeholder="Type Your Message">
+        <!-- <div class="inputBox">
+          <input type="text" required>
+          <span>Username</span>
+          <i></i>
+        </div> -->
+        <button type="submit" class="submitbtn">Submit</button></div>
+        <button type="reset" class="resetbtn">Clear Form</button>
+      </fieldset>
+      <br />
+      </fieldset>
+      </fieldset>
+    </form>
+  </article>
+</body>
+</html>
