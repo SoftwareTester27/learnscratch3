@@ -578,9 +578,10 @@ ul {
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   body {
-    font-size: 1rem;
+    font-size: 0.3rem;
+    
   }
 }
 
