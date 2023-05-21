@@ -234,18 +234,16 @@
       // alert("Please Set Zoom Level To 80%")
     }else if(userAgent.match(/firefox|fxios/i)){
       browser = "firefox";
-      alert("Note Before You Continue: You will not able to access the beta program thru firefox");
     }else if(userAgent.match(/opr/i)){
       browser = "opera";
-      alert("You are running Opera which is an unsupported browser. Make sure you open it on, Edge, Chrome or Firefox");
     }else if(userAgent.match(/chrome|chromium|crios/i)){
       browser = "chrome";
     }else if(userAgent.match(/safari/i)){
       browser = "safari";
-      alert("You are running Safari which is an unsupported browser. Make sure you open it on, Edge, Chrome or Firefox");
+      alert("You are running Safari which is an unsupported browser. Make sure you open it on, Edge, Chrome, Opera, Opera GX or Firefox");
     }else{
       alert("Other browser");
-      alert("You are running on an unsupported browser. Make sure You open this website on, Edge, Chrome or Firefox");
+      alert("You are running on an unsupported browser. Make sure You open this website on, Edge, Chrome, Opera, Opera GX or Firefox");
       window.close();
     }
     const logo = document.querySelector(`.logos .${browser}`);
