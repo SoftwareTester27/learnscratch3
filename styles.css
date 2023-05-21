@@ -148,7 +148,7 @@ hr#scl2 {
 
 a.create {
   text-decoration: none;
-  background-color: #4d97ff;
+  background-color: none;
   color: #fff;
   margin-bottom: 10px;
   height: 50px;
@@ -166,7 +166,7 @@ a.create:active {
 
 a.create:hover {
   text-decoration: none;
-  background-color: #3585f5;
+  background-color: #4280d6ff;
   margin-bottom: 15px;
   height: 50px;
 }
