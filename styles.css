@@ -146,7 +146,7 @@ hr#scl2 {
   margin-top: 5px;
 }
 
-/* a.create {
+a.create {
   text-decoration: none;
   background-color: #4d97ff;
   color: #fff;
@@ -169,7 +169,7 @@ a.create:hover {
   background-color: #3585f5;
   margin-bottom: 15px;
   height: 50px;
-} */
+}
 
 .tobbar li.logo span:hover {
   transform: scale(110%);
