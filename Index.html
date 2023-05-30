@@ -200,25 +200,6 @@
   <center>
     <div class="main">
       <script>
-
-        let sfs = document.querySelector("button.sfs")
-        let efs = document.querySelector("button.efs")
-        efs.style = "visibility: hidden"
-        sfs.style = "visibility: visible"
-        function sfs() {
-          sfs.style = "visibility: hidden"
-          efs.style = "visibility: visible"
-        }
-        function efs() {
-          efs.style = "visibility: hidden"
-          sfs.style = "visibility: visible"
-        }
-
-        window.addEventListener('keydown', (event) => {
-          if (event.key === 's' && event.ctrlKey) {
-            event.preventDefault();
-          }
-        })
       </script><br><br>
       <div class="title">
         Scratch 3 Learning Page <br>
