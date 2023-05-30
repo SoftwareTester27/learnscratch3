@@ -12,6 +12,18 @@ section {
   align-items: center;
 }
 
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sitecredits{
+  text-shadow: none;
+  font-size: 2rem;
+}
+
 *,
 html {
   padding: 0;
