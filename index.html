@@ -161,6 +161,7 @@
       }
     });
   </script>
+<<<<<<< HEAD
   </div> -->
   <!-- <div class="wrapper">
     <h2>Browser:</h2>
@@ -172,6 +173,8 @@
       <img class="safari" src="safari.png" alt="safari" title="Apple Safari">
     </div>
   </div> -->
+=======
+>>>>>>> b0693ce51f917c678cadef7db0ed15c4ee24275a
   <script>
     let userAgent = navigator.userAgent;
     let browser;
@@ -180,23 +183,18 @@
       // alert("Please Set Zoom Level To 80%")
     }else if(userAgent.match(/firefox|fxios/i)){
       browser = "firefox";
-      alert("Note Before You Continue: You will not able to access the beta program thru firefox");
     }else if(userAgent.match(/opr/i)){
       browser = "opera";
-      alert("You are running Opera which is an unsupported browser. Make sure you open it on, Edge, Chrome or Firefox");
     }else if(userAgent.match(/chrome|chromium|crios/i)){
       browser = "chrome";
     }else if(userAgent.match(/safari/i)){
       browser = "safari";
-      alert("You are running Safari which is an unsupported browser. Make sure you open it on, Edge, Chrome or Firefox");
+      alert("You are running Safari which is an unsupported browser. Make sure you open it on, Edge, Chrome, Opera, Opera GX or Firefox");
+      window.close();
     }else{
       alert("Other browser");
-      alert("You are running on an unsupported browser. Make sure You open this website on, Edge, Chrome or Firefox");
+      alert("You are running on an unsupported browser. Make sure You open this website on, Edge, Chrome, Opera, Opera GX or Firefox");
       window.close();
-    }
-    const logo = document.querySelector(`.logos .${browser}`);
-    if(logo != ""){
-      logo.style.opacity = "1";
     }
   </script>
   <div class="tobbar">
@@ -207,24 +205,20 @@
             <span class="scratch"></span>
           </a>
         </li>&nbsp;&nbsp;&nbsp;&nbsp;
-        <!-- <li class="link">
+        <li class="link">
             <a class="create" href="https://scratch.mit.edu/projects/editor/" target="_blank">Create</a><br>
-          </li> -->
-        <li class="fs">
-          <button class="sfs" style="border: none; background-color: #fff; width: 20px;"
-            onclick="document.documentElement.requestFullscreen(); sfs()">
-            <i class="fa-solid fa-expand"></i>
-          </button>
-          <button class="efs" style="border: none; background-color: #fff; width: 20px;"
-            onclick="document.exitFullscreen(); efs()">
-            <i class="fa-solid fa-compress"></i>
-          </button>
-        </li>
+          </li>
       </ul>
     </div>
   </div>
   <center>
+<<<<<<< HEAD
     <div class="main"><br><br>
+=======
+    <div class="main">
+      <script>
+      </script><br><br>
+>>>>>>> b0693ce51f917c678cadef7db0ed15c4ee24275a
       <div class="title">
         Scratch 3 Learning Page <br>
         <div class="sitecredits">By <a href="https://github.com/TheCoolerDude" class="githubprofile">The_Cooler-Dude™</a> On Github</div>
