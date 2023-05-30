@@ -12,6 +12,16 @@ section {
   align-items: center;
 }
 
+.sitecredits{
+  text-shadow: none;
+  font-size: 2rem;
+}
+
+a.githubprofile {
+  color: white;
+  text-decoration: none;
+}
+
 *,
 html {
   padding: 0;
