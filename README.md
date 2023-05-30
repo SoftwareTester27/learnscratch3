@@ -1,1 +1,1 @@
-# Scratch3LearningPage.github.io
+# thecoolerdude.github.io/learnscratch3/
